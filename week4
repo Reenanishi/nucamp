@@ -1,0 +1,47 @@
+week 4 :- 
+1) add play/pause button to the carosel and position it to the bottom right of the carousel. 
+    
+    
+    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carouselPause">
+                            <i class="fa fa-pause"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carouselPlay">
+                            <i class="fa fa-play"></i>
+                        </button>
+
+                        ----------------------------------------------------------
+
+ CSS:-----  
+     #carouselButton {
+       position: absolute;
+       right: 0;
+       bottom: 0;
+       z-index: 100;
+    }
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+ 2) Add jQuery script to change the carousel cycle interval and add play/pause functionality to the buttons:-
+
+
+  <script>
+        $(function() {
+            $(".carousel").carousel( { interval: 2000 } );
+            $("#carouselPause").click(function(){
+                $(".carousel").carousel("pause");
+            });
+            $("#carouselPlay").click(function(){
+                $(".carousel").carousel("cycle");
+            });
+        });
+    </script>
+  
+  $ symbole indicate that we r going to use jQuery.
+  (fuction()) ready method in jQuery
+
+
+   cycle interval default its is 5000 milisec
+
+
+
+                      
