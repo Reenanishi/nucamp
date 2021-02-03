@@ -40,7 +40,23 @@ week 4 :-
   (fuction()) ready method in jQuery
 
 
-   cycle interval default its is 5000 milisec
+   cycle interval default its is 5000 milisec.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+3)    Query script so that when the button is clicked, it will change from Play to Pause or vice versa, and also cause the desired carousel behavior.
+
+    $(".carousel").carousel( { interval: 2000 } );
+            $("#carouselButton").click(function(){
+                if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                    $(".carousel").carousel("pause");
+                    $("#carouselButton").children("i").removeClass("fa-pause");
+                    $("#carouselButton").children("i").addClass("fa-play");
+                } else {
+                    $(".carousel").carousel("cycle");
+                    $("#carouselButton").children("i").removeClass("fa-play");
+                    $("#carouselButton").children("i").addClass("fa-pause"); 
+                }
+            });
 
 
 
