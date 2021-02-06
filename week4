@@ -58,6 +58,10 @@ week 4 :-
                 }
             });
 
+------------------------
+      $("#reserveButton").click(function(){
+         $('#reserveModal').modal()
+      });
 
 
                       
