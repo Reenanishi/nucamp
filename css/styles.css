@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Open Sans", sans-serif; }
 
@@ -47,3 +48,18 @@ a, a:hover {
   right: 0;
   bottom: 0;
   z-index: 100; }
+
+#loginModel .modal-header {
+  background-color: #901CAD; }
+
+#reserveModel .modal-header {
+  background-color: #17A2B8; }
+
+#loginModal .modal-header {
+  background-color: #901CAD;
+  color: white; }
+
+​
+#reserveModal .modal-header {
+  background-color: #17A2B8;
+  color: white; }
